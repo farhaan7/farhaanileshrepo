@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+
+
+  <test name="chromeTest">
+  
+  <parameter name="browser" value="chrome" />
+  
+   <parameter name="username" value="fkapde@gmail.com" />
+  <parameter name="password" value="chatprofile" />
+    <classes>
+      <class name="myTests.TestngDemo"/>
+    </classes>
+  </test>
+  
+   <test name="firefoxTest">
+  
+  <parameter name="browser" value="firefox" />
+  
+   <parameter name="username" value="fkapde@gmail.com" />
+  <parameter name="password" value="chatprofile" />
+    <classes>
+      <class name="myTests.TestngDemo"/>
+    </classes>
+  </test>
+   <!-- Test -->
+</suite> <!-- Suite -->
